@@ -1,0 +1,31 @@
+<h1 style="margin-top: 10px;">Registration</h1>
+<%= form_for(@admin_user, url: main_create_path) do |f| %>
+	<% if @errors %>
+	 	<% @errors.each do |k, v| %>
+	 		<p><strong><%= k.capitalize %></strong> <%= v %></p>
+	 	<% end %>
+	<% end %>
+	<div class="field">
+		<%= f.label :email %> <br/>
+		<%= f.email_field :email %> <br/>
+	</div>
+
+	<div class="field">
+		<%= f.label :name %> <br/>
+		<%= f.text_field :name %> <br/>
+	</div>
+
+	<div class="field">
+		<%= f.label :bort_at %> <br/>
+		<%= f.text_field :bort_at, class: 'born_at' %> <br/>
+	</div>
+
+	<div class="field">
+		<%= f.label :password %> <br/>
+		<%= f.password_field :password %> <br/>
+	</div>
+
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>

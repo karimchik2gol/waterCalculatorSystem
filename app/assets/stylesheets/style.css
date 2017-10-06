@@ -1,0 +1,141 @@
+p, span, h1, h2, h3 {
+    font-family: arial;
+}
+.top {
+    text-align: right;
+    margin: 20px 0;
+}
+.top a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.center {
+	width: 1000px;
+	margin: auto;
+}
+
+.center h1 {
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.successful, .failed {
+    display: none;
+}
+
+.params {
+	width: 40%;
+}
+
+.result {
+	width: 53%;
+}
+
+.gender {
+	margin-bottom: 20px;
+}
+
+.gender .selected-gender {
+	background-color: #5c8ea1;
+    color: white;
+    font-weight: bold;
+}
+
+.gender span {
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.3);
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+h3 span, h2 span {
+	color: #02a9da;
+	font-size: 40px;
+	font-weight: 100;
+}
+h3 span {
+	margin-left: 40px;
+}
+
+.weight {    
+	width: 313px;
+    height: 40px;
+    background: url(slider-bg.png) left top no-repeat;
+    position: relative;
+}
+
+.ui-slider-handle {
+    top: -8px;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 27px;
+    height: 28px;
+    background: url(slider-pointer.png) center top no-repeat;
+    margin-left: -14px;
+    outline: 0;
+}
+
+.slider {
+    position: absolute;
+    text-align: left;
+    width: 289px;
+    height: 12px;
+    left: 12px;
+    top: 0;
+}
+
+.physical-activity {
+    width: 313px;
+    height: 40px;
+    background: url(slider-bg-active.png) left top no-repeat;
+    position: relative;
+}
+
+.physical-activity .slider {
+    position: absolute;
+    text-align: left;
+    width: 276px;
+    height: 12px;
+    left: 17px;
+    top: 0;
+}
+
+.b-bottle-cals {
+    width: 148px;
+    height: 520px;
+    background: url(bottle-patt-bg.png) left bottom no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+
+.b-bottle-cals .bottle-cals-patt {
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: 148px;
+    height: 520px;
+    background: url(buttle-patt.png) left bottom no-repeat;
+}
+
+.b-bottle-cals .bottle-cals-bg {
+    position: absolute;
+    bottom: 18px;
+    z-index: 2;
+    display: block;
+    width: 148px;
+    background: url(water.jpg) left top no-repeat;
+    -webkit-transition: height .4s;
+    -moz-transition: height .4s;
+    -o-transition: height .4s;
+    transition: height .4s;
+}
