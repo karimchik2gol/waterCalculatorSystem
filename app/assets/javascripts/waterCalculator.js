@@ -1,3 +1,4 @@
+/* global $ */
 /**
   * This program is calculating daily amount of water for man and woman
   * depending on the weight(kg) and physical activy(h).
@@ -10,24 +11,23 @@
 
 /**
   * Initializing default values and calling function for default data
-  * @constant {fixnum} CAPACITY 
+  * @constant {fixnum} CAPACITY
   * @constant {fixnum} BOTTLE_HEIGHT
-  * @constant {fixnum} WEIGHT
 **/
-const CAPACITY = 9       // Max bottle capacity in litres
-const BOTTLE_HEIGHT = 450   // Max height of bottle in PX 
-const WEIGHT = 20      // Default weight
-var PHYSICAL_ACTIVITY = 0  // Default physical activity
-var GENDER = 'man'      // Default gender
-var NEW_HEIGHT = 0      // Default height of water
-var VAL          // User daily amount of water
+const CAPACITY = 9 // Max bottle capacity in litres
+const BOTTLE_HEIGHT = 450 // Max height of bottle in PX
+var WEIGHT = 20 // Default weight
+var PHYSICAL_ACTIVITY = 0 // Default physical activity
+var GENDER = 'man' // Default gender
+var NEW_HEIGHT = 0 // Default height of water
+var VAL // User daily amount of water
 
-/* 
-  * Setting Datepicker 
+/*
+  * Setting Datepicker
 */
 $('.born_at').datepicker()
 
-/** 
+/**
   * Changing gender function
   * @event WaterCalculatorSystem#genderClick
 **/
@@ -38,7 +38,7 @@ $('.gender span').click(function () {
   calculate()
 })
 
-/** 
+/**
   * Event for Weight slider
   * @event WaterCalculatorSystem#weightSlider
   * @property {fixnum} min - Min value of weight on slider
@@ -57,7 +57,7 @@ $('.weight .slider').slider({
   }
 })
 
-/** 
+/**
   * Event for Physical Activity slider
   * @event WaterCalculatorSystem#physicalActivitySlider
   * @property {fixnum} min - Min value of physical activity on slider
@@ -76,7 +76,7 @@ $('.physical-activity .slider').slider({
   }
 })
 
-/** 
+/**
   * Button click event handler; sending data to the server
   * @event WaterCalculatorSystem#saveButtonClick
 **/
@@ -155,10 +155,10 @@ function calculateHeight () {
   * Sending history data to the server
   * @function createHistory
   * @property {boolean} async - Async AJAX or not
-  * @property {string} dataType - Format of data type we should receieve 
+  * @property {string} dataType - Format of data type we should receieve
   * @property {string} method - What method do we use to send AJAX
   * @property {string} url - The url we trying to connect
-  * @property {hash} data - The data we're sending to the serverr 
+  * @property {hash} data - The data we're sending to the serverr
   * @property {fixnum} data[history][weight] - Weight that we send
   * @property {float} data[history][physical_activity] - Physical Activity that we send
   * @property {float} data[history][capacity] - Daily amount of water
