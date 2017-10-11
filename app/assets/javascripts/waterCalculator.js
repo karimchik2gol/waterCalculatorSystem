@@ -11,11 +11,17 @@
 
 /**
   * Initializing default values and calling function for default data
+**/
+/**
+  * Capacity of bottle
   * @constant {fixnum} CAPACITY
+**/
+const CAPACITY = 9
+/**
+  * Max height of bottle in PX
   * @constant {fixnum} BOTTLE_HEIGHT
 **/
-const CAPACITY = 9 // Max bottle capacity in litres
-const BOTTLE_HEIGHT = 450 // Max height of bottle in PX
+const BOTTLE_HEIGHT = 450
 var WEIGHT = 20 // Default weight
 var PHYSICAL_ACTIVITY = 0 // Default physical activity
 var GENDER = 'man' // Default gender
