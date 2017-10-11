@@ -1,0 +1,22 @@
+Wed Oct 11 21:19:31 2017 +0300 307c286 HEAD@{0} checkout: moving from master to master
+Wed Oct 11 21:19:31 2017 +0300 307c286 HEAD@{1} checkout: moving from master to master
+Wed Oct 11 21:19:31 2017 +0300 307c286 HEAD@{2} checkout: moving from develop to master
+Fri Oct 6 21:05:49 2017 +0300 702b254 HEAD@{3} checkout: moving from master to develop
+Wed Oct 11 21:19:31 2017 +0300 307c286 HEAD@{4} merge documentation: Fast-forward
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{5} checkout: moving from documentation to master
+Wed Oct 11 21:19:31 2017 +0300 307c286 HEAD@{6} commit: Added javascript documentation
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{7} checkout: moving from master to documentation
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{8} checkout: moving from documentation to master
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{9} checkout: moving from master to documentation
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{10} checkout: moving from documentation to master
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{11} checkout: moving from test to documentation
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{12} checkout: moving from develop to test
+Fri Oct 6 21:05:49 2017 +0300 702b254 HEAD@{13} checkout: moving from master to develop
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{14} checkout: moving from master to master
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{15} checkout: moving from develop to master
+Fri Oct 6 21:05:49 2017 +0300 702b254 HEAD@{16} checkout: moving from test to develop
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{17} checkout: moving from master to test
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{18} checkout: moving from test to master
+Fri Oct 6 21:06:14 2017 +0300 8571840 HEAD@{19} commit: test
+Fri Oct 6 21:05:49 2017 +0300 702b254 HEAD@{20} checkout: moving from develop to test
+Fri Oct 6 21:05:49 2017 +0300 702b254 HEAD@{21} commit (initial): 1st version. Rails & jquery
