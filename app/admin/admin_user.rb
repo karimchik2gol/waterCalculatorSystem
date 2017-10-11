@@ -1,7 +1,7 @@
 ActiveAdmin.register AdminUser do
-  permit_params :email, :password, :password_confirmation
+  permit_params :email, :name, :bort_at, :password, :password_confirmation
   actions :index, :show, :edit, :update
-  before_action :restrict_access, only: [:edit, :update]
+  before_action :redirect_to_edit_page, except: [:edit, :update]
 
 
   index do
@@ -21,7 +21,9 @@ ActiveAdmin.register AdminUser do
 
   form do |f|
     f.inputs "Admin Details" do
+      f.input :name
       f.input :email
+      f.input :bort_at
       f.input :password
       f.input :password_confirmation
     end
@@ -30,8 +32,16 @@ ActiveAdmin.register AdminUser do
 
 
   controller do
-    def restrict_access
-      redirect_to admin_admin_users_path unless current_admin_user.id.to_i == params[:id].to_i  
+    def redirect_to_edit_page
+      redirect_to edit_admin_admin_user_path(current_admin_user.id.to_i)  
+    end
+
+    def update_resource(object, attributes)
+      if params[:id].to_i == current_admin_user.id.to_i
+        update_method = attributes.first[:password].present? ? :update_attributes : :update_without_password
+        object.send(update_method, *attributes)
+        sign_in(object, :bypass => true)
+      end
     end
   end
 
