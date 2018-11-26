@@ -7,6 +7,11 @@ Rails.application.routes.draw do
   get 'main/cabinet'
   post 'main/create', as: 'main_create'
   post 'create_history', to: 'main#create_history'
+  
+  #------------
+  delete 'main/delete/:id', to: 'main#delete'
+  put 'main/update/:id', to: 'main#update'
+  #------------
 
   get 'registration', to: 'main#registration', as: "registration"
 
