@@ -43,6 +43,24 @@ class MainController < ApplicationController
   def history_params
   	params.require(:history).permit(:weight, :physical_activity, :capacity)
   end
+  
+  def update
+    id, data = params[:id], params[:data]
+    if current_admin_user
+      history = current_admin_user.histories.find(id)
+      history.update_attributes(data)
+      redirect_to root_url
+    end
+  end
+  
+  def delete
+    id = params[:id]]
+    if current_admin_user
+      history = current_admin_user.histories.find(id)
+      history.delete
+      redirect_to root_url
+    end
+  end
 
   def admin_user_params
   	params.require(:admin_user).permit(:name, :email, :bort_at, :password)
