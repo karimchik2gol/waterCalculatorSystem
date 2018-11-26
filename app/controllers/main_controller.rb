@@ -54,7 +54,7 @@ class MainController < ApplicationController
   end
   
   def delete
-    id = params[:id]]
+    id = params[:id]
     if current_admin_user
       history = current_admin_user.histories.find(id)
       history.delete
